@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	background-color: #E6E6FA;
+}
+.content-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 5px solid #332F2C;
+    border-radius: 25px;
+    background-color: #ff944d;
+    font-size: 18px;
+}
+.site-bar{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #fff;
+    border: 5px solid #332F2C;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*Стиль кнопки1*/
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ff944d;
+}
+
+.button1:hover {
+    background-color: #ff944d;
+    color: white;
+}
+/*Стиль кнопки2*/
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #9932CC;
+}
+
+.button2:hover {
+    background-color: #9932CC;
+    color: white;
+}
+/*Стиль кнопки3*/
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #696969;
+}
+
+.button3:hover {
+    background-color: #696969;
+    color: white;
+}
+
+.img-center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-radius{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

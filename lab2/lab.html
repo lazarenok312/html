@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Music player</title>
+	<style type="text/css">
+
+		.button{
+			width: 500px;
+			height: 50px;
+			border: 2px solid black;
+			border-radius: 20px;
+			background-color: gainsboro;
+			margin-bottom: 15px;
+			line-height: 50px;
+			padding-left: 10px;
+			cursor: pointer;
+          	}
+        .song_images{
+            margin:0 10px;
+            float: right;
+            height: 50px;
+            border-radius: 25px;
+
+        }
+		.button:hover{
+			background-color: #404347;
+			color: white;
+		}
+		.button:active{
+			background-color: black;
+		}
+		.content{
+			float: left;
+			height: 150px;
+			margin-right: 20px;
+			width: 600px;
+			overflow-y: scroll;
+			background: linear-gradient(to top, #fefcea, #f1da36);
+	    	padding: 10px;
+	    	border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="content songs">
+        <div class="button" onclick="tap(this.id)" data-music="audio/filv_-_balenciaga_muzter.net.mp3" data-image="images/1.png" id="1"><img class="song_images" src="images/1.png"><div>FILV-Balenciaga</div></div>
+        <div class="button" onclick="tap(this.id)" data-music="audio/Braken Monstercat - Flight (ft. Tristam).mp3" data-image="images/2.png" id="2"><img class="song_images" src="images/2.png"><div>Braken Monstercat - Flight</div></div>
+		<div class="button" onclick="tap(this.id)" data-music="audio/meg-dia-monster-dotexe-remix.mp3" data-image="images/3.png" id="3"><img class="song_images" src="images/3.png"><div>Meg & Dia - Monster</div></div>
+	</div>
+
+	<div class="content player">
+        <img src="images/4.png" width="50" height="50" float="left"; id="image">
+        <audio src="" controls id="audio"></audio>
+    </div>
+</body>
+<script type="text/javascript">
+	function tap(id) {
+        audio = document.getElementById('audio')
+        image = document.getElementById('image')
+        audio.src = document.getElementById(id).dataset.music
+        audio.play()
+        image.src = document.getElementById(id).dataset.image
+	}
+</script>
+</html> 
